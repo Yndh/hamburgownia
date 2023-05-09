@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:wght@500&family=Titan+One&display=swap');
+*{
+  scroll-behavior: smooth;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  overflow-x: hidden;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
   display: flex;
-  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #FED601; 
+
+  box-sizing: border-box;
+}
+
+p{
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+h1{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 87px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: 5px 0;
+}
+h2{
+  font-family: 'Titan One', cursive;
+  font-size: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.title{
+  font-family: 'Titan One', cursive;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+button{
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 30px;
+  text-transform: capitalize;
+  margin: 20px 0;
+  padding: 15px 30px;
+  color: var(--font-color);
+  background: var(--bg-color);
+  border: 5px solid var(--font-color);
+  box-shadow: 2px 2px 0px 2px var(--font-color);
+  border-radius: 25px;
+  transition: .3s;
+}
+button:hover{
+  box-shadow: 3px 3px 0px 5px var(--font-color);
+}
+
+.content__container{
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  flex-direction: column;
+
+  width: 100%;
+  padding: 100px 0;
+
+  background: black;
   color: white;
+
+  z-index: 2;
+}
+.content__container::before{
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: -10%;
+  width: 120%;
+  height: 100px;
+  background: black;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+::-webkit-scrollbar {
+  width: 0;
 }

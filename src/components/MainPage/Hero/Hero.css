@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 80vh;
+    margin: 200px 0;
+    /* background: white; */
+}
+.hero .heroDesc{
+    font-family: 'Titan One', cursive;
+    font-size: 20px;
+    text-align: center;
+    width: 60%;
+}
+.hero button{
+    --font-color: black;
+    --bg-color: white;
+    width: 100%;
+}
+.hero a{
+    width: 60%;
+}
+
+.hero .heroCheez{
+    position: absolute;
+    bottom: -100px;
+    right: 50px;
+    width: 780px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    z-index: 3;
+}
