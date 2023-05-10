@@ -46,6 +46,12 @@ h2{
   font-size: 25px;
   margin: 5px 0;
 }
+.color {
+  color: #FED501;
+}
+.darkColor {
+  color: #F19A22;
+}
 
 button{
   font-family: 'Alfa Slab One', cursive;

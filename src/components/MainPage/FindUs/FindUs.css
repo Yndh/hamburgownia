@@ -1,0 +1,27 @@
+.findUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 75%;
+    margin-top: 50px;
+}
+
+.findUs .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+    height: 600px;
+
+
+    background-color: #aad3df;
+    color: whitesmoke;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+}

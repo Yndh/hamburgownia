@@ -1,0 +1,74 @@
+.promotions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 75%;
+}
+.promotions__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+.promotionsCol{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    margin: 0 50px;
+    width: 50%;
+}
+.promotionsCol:first-child{
+        align-items: flex-end;
+}
+.promotionsCol:last-child{
+        align-items: flex-start;
+}
+.promotionsCol .productImage{
+    width: 500px;
+}
+.promotionsCol .price{
+    position: absolute;
+    top: 40px;
+    right: -100px;
+
+    font-family: 'Titan One', cursive;
+    font-size: 45px;
+    text-transform: uppercase;
+    color: #DE333F;
+    letter-spacing: -2px;
+    -webkit-text-stroke: 2px #FFFFFF;
+    text-stroke: 2px #FFFFFF;
+    z-index: 1;
+}
+.promotionsCol .price::after{
+    content: '';
+    position: absolute;
+    left: 15%;
+    top: -40%;
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+.promotionsCol h2{
+    margin: 5px 0;
+}
+.promotionsCol .title{
+    margin-left: 20px;
+}
+.promotionsCol .desc {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+    width: 45%;
+    margin: 15px 0;
+    margin-left: 20px;
+    opacity: .8;
+
+}
