@@ -1,4 +1,5 @@
 .promotions{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,4 +72,8 @@
     margin-left: 20px;
     opacity: .8;
 
+}
+.promotions .link {
+    position: absolute;
+    top: -70px;
 }

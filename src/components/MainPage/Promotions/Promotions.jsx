@@ -4,16 +4,15 @@ import CheezTaw from '../../../assets/cheeztaw.png'
 const Promotions = () => {
     return (
       <div className="promotions">
-        <h2 id='promotions'>
+        <span id="promotions" className="link"></span>
+        <h2>
           Gorąca <span className="color">Oferta</span>
         </h2>
 
         <div className="promotions__container">
           <div className="promotionsCol">
             <img src={CheezTaw} alt="CheezTaw" className="productImage" />
-            <span className="price">
-              19,99zł
-            </span>
+            <span className="price">19,99zł</span>
           </div>
           <div className="promotionsCol">
             <h2>

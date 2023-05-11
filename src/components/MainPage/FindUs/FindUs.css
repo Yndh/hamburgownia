@@ -1,4 +1,5 @@
 .findUs {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +22,17 @@
     color: whitesmoke;
 
     border-radius: 20px;
+    border: 3px solid #868993;
 
     overflow: hidden;
     box-sizing: border-box;
+    transition: .3s;
+}
+.findUs .map:hover{
+    border-color: #F19A22;
+}
+
+.findUs .link {
+    position: absolute;
+    top: -70px;
 }

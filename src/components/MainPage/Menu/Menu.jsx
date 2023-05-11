@@ -1,55 +1,47 @@
-import './Menu.css'
-import Cheez from '../../../assets/cheezburger.png'
-import Bacon from '../../../assets/baconburg.png'
-import Winged from '../../../assets/wingedburg.png'
+import { Link } from 'react-router-dom'
+
+import "./Menu.css";
+import { MEALS } from "../../../data/data";
 
 const Menu = () => {
-    return (
-      <div className="menu">
-        <h2 id='menu'>
+  const filteredMeals = MEALS.filter((meal) => meal.categoryId === 1);
+
+  return (
+    <div className="menu">
+      <span id="menu" className="link"></span>
+      <h2>
+        <Link to="product">
           Odkryj <span className="color">Menu</span>
-        </h2>
+        </Link>
+      </h2>
+      <div className="products__container">
+        {filteredMeals.map((meal) => (
+          <Link to={`product/${meal.id}`} className='productLink'>
+            <div className="product">
+              <span className="price">{meal.price} zł</span>
+              <span className="title">
+                {meal.title.split(" ").map((word, index) => {
+                  if (index == 0) {
+                    return <span className="darkColor">{word}</span>;
+                  } else {
+                    return word;
+                  }
+                })}
+              </span>
+              <span className="desc">{meal.description}</span>
 
-        <div className="products__container">
-          <div className="product">
-            <span className="price">9,99zł</span>
-            <span className="title">
-              <span className="darkColor">Cheez</span> Burg
-            </span>
-            <span className="desc">
-              Soczysta wołowina, rozpuszczający się w ustach ser i świeże
-              warzywa w chrupiącej bułce
-            </span>
-
-            <img src={Cheez} alt="CheezBurg" className="productImage" />
-          </div>
-          <div className="product">
-            <span className="price">9,99zł</span>
-            <span className="title">
-              <span className="darkColor">Bacon</span> Burg
-            </span>
-            <span className="desc">
-              Pikantny smak chrupiącej bekonowej wędliny na soczystej wołowinie
-            </span>
-
-            <img src={Bacon} alt="BaconBurg" className="productImage" />
-          </div>
-          <div className="product">
-            <span className="price">9,99zł</span>
-            <span className="title">
-              <span className="darkColor">Winged</span> Burg
-            </span>
-            <span className="desc">
-              Zdrowa i soczysta pierś z kurczaka, chrupiąca sałata i świeże
-              Ogórki w pysznej bułce burgerowej
-            </span>
-
-            <img src={Winged} alt="WingedBurg" className="productImage" />
-          </div>
-        </div>
-
-        <button>Rozwiń Menu</button>
+              <img
+                src={meal.imageUrl}
+                alt={meal.title}
+                className="productImage"
+              />
+            </div>
+          </Link>
+        ))}
       </div>
-    );
-}
+
+      <button>Rozwiń Menu</button>
+    </div>
+  );
+};
 export default Menu;

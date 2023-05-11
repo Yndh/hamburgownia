@@ -1,27 +1,19 @@
-import './App.css';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import NavBar from './components/MainPage/NavBar/NavBar';
-import Hero from './components/MainPage/Hero/Hero';
-import Menu from './components/MainPage/Menu/Menu';
-import Promotions from './components/MainPage/Promotions/Promotions';
-import Slider from './components/MainPage/Slider/Slider';
-import FindUs from './components/MainPage/FindUs/FindUs';
-import OpenHours from './components/MainPage/OpenHours/OpenHours';
+import "./App.css";
+import NavBar from "./components/NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import Product from "./pages/Product/Product";
 
 function App() {
-  return (
-    <div className="app">
-      <NavBar/>
-      <Hero/>
 
-      <div className='content__container'>
-          <Menu/>
-          <Promotions/>
-          <Slider/>
-          <FindUs/>
-          <OpenHours/>
-      </div>
-    </div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="product/:id" element={<Product />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

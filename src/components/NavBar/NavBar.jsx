@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
+
 import './NavBar.css'
-import logo from '../../../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 
 const NavBar = () => {
     return (
@@ -10,9 +12,9 @@ const NavBar = () => {
             </div>
 
             <ol>
-                <li><a href="#menu"><p>Menu</p></a></li>
-                <li><a href="#promotions"><p>Promocje</p></a></li>
-                <li><a href="#findus"><p>Znajdź nas</p></a></li>
+                <li><Link to="/#menu"><p>Menu</p></Link></li>
+                <li><Link to="/#promotions"><p>Promocje</p></Link></li>
+                <li><Link to="/#findus"><p>Znajdź nas</p></Link></li>
             </ol>
         </div>
     )

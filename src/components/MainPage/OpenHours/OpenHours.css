@@ -41,12 +41,3 @@
 .dayRow span:nth-child(2){
     width: 70%;
 }
-
-.dayRow .info svg{
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    width: 50px;
-    color: #DE333F;
-    fill: #DE333F;
-}

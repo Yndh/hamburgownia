@@ -16,7 +16,8 @@ const FindUs = () => {
 
   return (
     <div className="findUs">
-      <h2 id="findus">
+      <span id="findus" className="link"></span>
+      <h2>
         Znajdź <span className="color">Nas</span>
       </h2>
 

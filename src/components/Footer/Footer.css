@@ -1,0 +1,84 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    padding: 70px 0;
+
+    background: #FED601;
+    color: #014463;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 80%;
+}
+
+.footerLogo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 25%;
+
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+
+.footerLogoText {
+    font-size: 35px;
+}
+
+.footerLogoDesc {
+    font-size: 16px;
+}
+.footerRow{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    width: 65%;
+}
+.footerCol {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.footerCol .title {
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+.footerCol ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.footerCol ul li {
+    display: flex;
+    align-items: center;
+
+    margin: 10px 0;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+}
+.footerCol ul li a {
+    color: #014463;
+    text-decoration: none;
+}
+.footerCol ul li i{
+    font-size: 18px;
+    margin-right: 5px;
+}

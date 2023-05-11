@@ -1,0 +1,36 @@
+.productEl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 75%;
+}
+
+.productEl .productImg {
+    position: absolute;
+    top: -450px;
+    height: 700px;
+}
+
+.productEl h2 {
+    margin-bottom: 5px;
+}
+
+.productEl .desc {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: normal;
+    opacity: .8;
+    width: 45%;
+}
+
+.productEl button {
+    --font-color: white;
+    --bg-color: #F19A22;
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    font-size: 55px;
+    padding: 10px 30px;
+    width: 40%;
+}

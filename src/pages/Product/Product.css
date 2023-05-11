@@ -1,0 +1,26 @@
+.productElContainer{
+    position: relative;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    color: white;
+    padding: 150px 0;
+
+    margin-top: 500px;
+    z-index: 1;
+}
+.productElContainer::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    /* left: -50%; */
+    width: 120%;
+    height: 100px;
+    background: black;
+    border-radius: 50%;
+    z-index: -1;
+}
