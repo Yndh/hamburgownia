@@ -28,35 +28,37 @@ const Menu = () => {
       <NavBar />
 
       <div className="content__container">
-        <h2>
-          Odkryj <span className="color">Menu</span>
-        </h2>
-        <Categories category={category} setCategory={setCategoryHandler} />
+        <div className="menu-content">
+          <h2>
+            Odkryj <span className="color">Menu</span>
+          </h2>
+          <Categories category={category} setCategory={setCategoryHandler} />
 
-        <div className="products__container">
-          {filteredMeals.map((meal) => (
-            <Link to={`../product/${meal.title}`} className="productLink">
-              <div className="product">
-                <span className="price">{meal.price} zł</span>
-                <span className="title">
-                  {meal.title.split(" ").map((word, index) => {
-                    if (index == 0) {
-                      return <span className="darkColor">{word}</span>;
-                    } else {
-                      return word;
-                    }
-                  })}
-                </span>
-                <span className="desc">{meal.description}</span>
+          <div className="products__container">
+            {filteredMeals.map((meal) => (
+              <Link to={`../product/${meal.title}`} className="productLink">
+                <div className="product">
+                  <span className="price">{meal.price} zł</span>
+                  <span className="title">
+                    {meal.title.split(" ").map((word, index) => {
+                      if (index == 0) {
+                        return <span className="darkColor">{word}</span>;
+                      } else {
+                        return word;
+                      }
+                    })}
+                  </span>
+                  <span className="desc">{meal.description}</span>
 
-                <img
-                  src={meal.imageUrl}
-                  alt={meal.title}
-                  className="productImage"
-                />
-              </div>
-            </Link>
-          ))}
+                  <img
+                    src={meal.imageUrl}
+                    alt={meal.title}
+                    className="productImage"
+                  />
+                </div>
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
       <img src={bottomWave} alt="bottomWave" className="bottomWave" />

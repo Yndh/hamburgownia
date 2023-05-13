@@ -1,24 +1,25 @@
-.products__container{
+.menu-content{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-
-    margin-top: 50px;
+    flex-direction: column;
 
     width: 75%;
 }
-.products__container .products__container {
+.products__container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
+
     width: 100%;
+
+    margin-top: 50px;
 }
 
 .products__container .productLink {
-    width: 20%;
+    /* width: 100%; */
     margin: 20px 70px;
 }
 
@@ -33,7 +34,7 @@
     border: 3px solid #868993;
     border-radius: 10px;
 
-    width: 100%;
+    width: 300px;
     min-height: 200px;
 
     padding: 10px;
