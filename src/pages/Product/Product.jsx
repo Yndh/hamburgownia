@@ -17,10 +17,9 @@ const Product = () => {
       window.scrollTo(0, 0);
     }, [pathname]);
 
-    const { id } = useParams();
-    const mealId = parseInt(id);
+    const { title } = useParams();
 
-    const filteredMeals = MEALS.filter((meal) => meal.id === mealId)[0];
+    const filteredMeals = MEALS.filter((meal) => meal.title === title)[0];
     console.log(filteredMeals);
     console.log('==========');
 

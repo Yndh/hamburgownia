@@ -1,0 +1,35 @@
+.categories__container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 75%;
+    height: 150px;
+
+    border-radius: 25px;
+    background: white;
+    color: black;
+}
+.categories__container .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .8;
+    transition: .3s;
+}
+.categories__container .active{
+    opacity: 1;
+    color: #014463;
+}
+.categories__container .icon .cat-title{
+    font-family: 'Titan One', cursive;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.categories__container .icon i{
+    font-size: 80px;
+}
+.categories__container .icon:hover{
+    opacity: .9;
+}

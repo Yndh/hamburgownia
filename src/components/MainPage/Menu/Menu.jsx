@@ -16,7 +16,7 @@ const Menu = () => {
       </h2>
       <div className="products__container">
         {filteredMeals.map((meal) => (
-          <Link to={`product/${meal.id}`} className='productLink'>
+          <Link to={`product/${meal.title}`} className='productLink'>
             <div className="product">
               <span className="price">{meal.price} zł</span>
               <span className="title">

@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="hero">
             <h1>Burgerownia z Charakterem</h1>
             <span className="heroDesc">Nasze burgery to połączenie lokalnych składników i kreatywnych receptur, które ożywią Twoje podniebienie!</span>
-            <Link to="product"><button>Zobacz Menu</button></Link>
+            <Link to="menu"><button>Zobacz Menu</button></Link>
 
             <img src={cheez} alt="CheezBurger" className='heroCheez'/>
         </div>
