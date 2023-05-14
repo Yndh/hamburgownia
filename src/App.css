@@ -130,3 +130,12 @@ img {
 ::-webkit-scrollbar {
   width: 0;
 }
+
+@media (max-width: 600px){
+  h1{
+    font-size: 25px;
+  }
+  h2{
+    font-size: 50px;
+  }
+}

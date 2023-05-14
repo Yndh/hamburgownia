@@ -34,3 +34,16 @@
     padding: 10px 30px;
     width: 40%;
 }
+
+@media (max-width: 600px){
+    .productEl .productImg{
+        height: 500px;
+        top: -300px;
+    }
+    .productEl .desc{
+        width: 100%;
+    }
+    .productEl button{
+        width: 100%;
+    }
+}

@@ -1,11 +1,15 @@
+import { Link } from 'react-router-dom'
+
 import "./Recommend.css";
 import ScrollableContainer from "../../ScrollableContainer/ScrollableContainer";
+import ProductElement from '../../ProductElement/ProductElement';
 import { MEALS } from "../../../data/data";
 
 const Recommend = (props) => {
   const mealsBundle = MEALS.filter(
     (meal) => meal.categoryId === 2 && meal.id != props.mealId
   );
+  
   const recommendedMeals = MEALS.filter(
     (meal) => meal.categoryId === 1 && meal.id != props.mealId
   );
@@ -18,25 +22,7 @@ const Recommend = (props) => {
 
       <ScrollableContainer>
         {mealsBundle.map((meal) => (
-          <div className="scrollableCont">
-            <span className="price">{meal.price} zł</span>
-            <span className="title">
-              {meal.title.split(" ").map((word, index) => {
-                if (index == 0) {
-                  return <span className="darkColor">{word}</span>;
-                } else {
-                  return word;
-                }
-              })}
-            </span>
-            <span className="desc">{meal.description}</span>
-
-            <img
-              src={meal.imageUrl}
-              alt={meal.title}
-              className="productImage"
-            />
-          </div>
+          <ProductElement meal={meal}/>
         ))}
       </ScrollableContainer>
       <h3>
@@ -45,25 +31,7 @@ const Recommend = (props) => {
 
       <ScrollableContainer>
         {recommendedMeals.map((meal) => (
-          <div className="scrollableCont">
-            <span className="price">{meal.price} zł</span>
-            <span className="title">
-              {meal.title.split(" ").map((word, index) => {
-                if (index == 0) {
-                  return <span className="darkColor">{word}</span>;
-                } else {
-                  return word;
-                }
-              })}
-            </span>
-            <span className="desc">{meal.description}</span>
-
-            <img
-              src={meal.imageUrl}
-              alt={meal.title}
-              className="productImage"
-            />
-          </div>
+          <ProductElement meal={meal}/>
         ))}
       </ScrollableContainer>
     </div>

@@ -24,10 +24,10 @@
     width: 50%;
 }
 .promotionsCol:first-child{
-        align-items: flex-end;
+    align-items: flex-end;
 }
 .promotionsCol:last-child{
-        align-items: flex-start;
+    align-items: flex-start;
 }
 .promotionsCol .productImage{
     width: 500px;
@@ -76,4 +76,38 @@
 .promotions .link {
     position: absolute;
     top: -70px;
+}
+
+@media (max-width: 600px){
+    .promotions__container{
+        flex-direction: column;
+    }
+    .promotionsCol{
+        align-items: center !important;
+        justify-content: center;
+    }
+    .promotionsCol .price{
+        top: 20px;
+        right: -80%;
+        font-size: 35px;
+    }
+    .promotionsCol .price::after{
+        top: -30%;
+        width: 70px;
+        height: 70px;
+    }
+    .promotionsCol .productImage{
+        width: 300px;
+    }
+    .promotionsCol .title{
+        text-align: center;
+        width: auto;
+        margin: 0;
+    }
+    .promotionsCol .desc{
+        font-size: 14px;
+        text-align: center;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
 }

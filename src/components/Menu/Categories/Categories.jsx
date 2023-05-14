@@ -42,7 +42,7 @@ const Categories = (props) => {
             props.setCategory(4);
           }}
         >
-          <i class="fa-solid fa-bowl-rice"></i>
+          <i class="fa-solid fa-utensils"></i>
           <span className="cat-title">Inne</span>
         </div>
       </div>

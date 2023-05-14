@@ -1,4 +1,5 @@
 .hero{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,12 +26,30 @@
 
 .hero .heroCheez{
     position: absolute;
-    bottom: -100px;
-    right: 50px;
-    width: 40%;
+    bottom: -90%;
+    right: -50%;
+    width: 85%;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     z-index: 3;
+}
+
+@media (max-width: 600px){
+    .hero{
+        width: 100%;
+        height: 40vh;
+    }
+    .hero .heroDesc{
+        width: 80%;
+        font-size: 16px;
+    }
+    .hero button{
+        font-size: 20px;
+    }
+    .hero .heroCheez{
+        position: static;
+        margin-top: -100px;
+    }
 }

@@ -82,3 +82,34 @@
     font-size: 18px;
     margin-right: 5px;
 }
+
+@media (max-width: 600px){
+    .footer__container{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerLogo{
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .footerRow{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .footerCol{
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+    }
+    .footerCol ul{
+        padding: 0;
+    }
+    .footerCol ul li{
+        justify-content: center;
+    }
+}

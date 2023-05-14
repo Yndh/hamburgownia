@@ -5,6 +5,7 @@ import "./Menu.css";
 import { MEALS } from "../../data/data";
 import NavBar from "../../components/NavBar/NavBar";
 import Categories from "../../components/Menu/Categories/Categories";
+import ProductElement from "../../components/ProductElement/ProductElement";
 import Footer from "../../components/Footer/Footer";
 import bottomWave from "../../assets/bottomWave.svg";
 
@@ -36,27 +37,7 @@ const Menu = () => {
 
           <div className="products__container">
             {filteredMeals.map((meal) => (
-              <Link to={`../product/${meal.title}`} className="productLink">
-                <div className="product">
-                  <span className="price">{meal.price} zł</span>
-                  <span className="title">
-                    {meal.title.split(" ").map((word, index) => {
-                      if (index == 0) {
-                        return <span className="darkColor">{word}</span>;
-                      } else {
-                        return word;
-                      }
-                    })}
-                  </span>
-                  <span className="desc">{meal.description}</span>
-
-                  <img
-                    src={meal.imageUrl}
-                    alt={meal.title}
-                    className="productImage"
-                  />
-                </div>
-              </Link>
+              <ProductElement meal={meal}/>
             ))}
           </div>
         </div>

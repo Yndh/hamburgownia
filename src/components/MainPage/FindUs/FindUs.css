@@ -36,3 +36,10 @@
     position: absolute;
     top: -70px;
 }
+
+@media (max-width: 600px){
+    .findUs .map{
+        width: 100%;
+        height: 300px;
+    }
+}

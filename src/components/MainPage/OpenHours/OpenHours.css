@@ -41,3 +41,9 @@
 .dayRow span:nth-child(2){
     width: 70%;
 }
+
+@media (max-width: 600px){
+    .dayRow span{
+        font-size: 16px;
+    }
+}
