@@ -6,14 +6,32 @@
 
     width: 75%;
 }
+.menu__content__container{
+    padding-top: 100px;
+}
+.menu__content__container::before {
+    display: none;
+}
 .products__container {
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
 
     width: 100%;
+    padding-left: 60px;
 
     margin-top: 50px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+    .menu-content{
+        width: 80%;
+    }
+}
+@media (max-width: 1162px){
+    .menu-content{
+        width: 90%;
+    }
 }

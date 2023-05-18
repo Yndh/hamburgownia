@@ -28,7 +28,7 @@ const Menu = () => {
     <div className="app">
       <NavBar />
 
-      <div className="content__container">
+      <div className="content__container menu__content__container">
         <div className="menu-content">
           <h2>
             Odkryj <span className="color">Menu</span>

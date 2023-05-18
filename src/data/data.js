@@ -63,7 +63,7 @@ export const MEALS = [
     4,
     1,
     "Cheddar Burg",
-    "Soczysta wołowina, rozpuszczający się w ustach ser cheddar i chrupiąca sałata w delikatnej bułce - Cheddar Burg to połączenie smaków, które zapadnie Ci w pamięć na długo",
+    "Soczysta wołowina, rozpuszczający się w ustach ser cheddar i chrupiąca sałata w delikatnej bułce",
     15.99,
     CheddarBurg
   ),
@@ -71,7 +71,7 @@ export const MEALS = [
     5,
     1,
     "Jalapeno Burg",
-    "Pikantna wołowina, ser cheddar, ostra papryczka Jalapeno i soczysta sałata w delikatnej bułce - Jalapeno Burg to prawdziwa uczta dla miłośników ostrego jedzenia",
+    "Pikantna wołowina, ser cheddar, ostra papryczka Jalapeno i soczysta sałata w delikatnej bułce",
     13.99,
     JalapenoBurg
   ),
@@ -194,7 +194,7 @@ export const MEALS = [
     20,
     1,
     "Grill Burg",
-    "Chrupiąca bułka, soczysta wołowina grillowana na ogniu, chrupiący bekon, ser oraz sos BBQ - Pozwól sobie na prawdziwą ucztę dla podniebienia i zanurz się w bogactwie smaków",
+    "Chrupiąca bułka, soczysta wołowina grillowana na ogniu, chrupiący bekon, ser oraz sos BBQ",
     15.99,
     GrillBurg
   ),

@@ -1,21 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../assets/logo.svg";
 
 const NavBar = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  const location = useLocation()
+  const navigate = useNavigate()
+
   const scrollToSection = (event, id) => {
-    event.preventDefault();
-    window.location.href = `/#${id}`;
+    console.log(location);
+    if(location.pathname == '/'){
+      event.preventDefault();
+      window.location.href = `/#${id}`;
+    }
+    document.querySelector("#mobile-check").checked = false;
+    checkHandle();
+  };
+
+  const checkHandle = () => {
+    setIsChecked(document.querySelector("#mobile-check").checked);
   };
 
   return (
     <div className="navbar">
-      <div className="logo">
+      <Link to="/" className="logo">
         <img src={logo} alt="Logo" />
         <p>Hamburgownia</p>
-      </div>
+      </Link>
 
+      <input type="checkbox" name="" id="mobile-check" onChange={checkHandle} />
       <ol>
         <li>
           <Link to="#" onClick={(e) => scrollToSection(e, "menu")}>
@@ -33,6 +48,12 @@ const NavBar = () => {
           </Link>
         </li>
       </ol>
+
+      <div className="menu-mobile">
+        <label htmlFor="mobile-check">
+          <i class={`fa-solid ${isChecked ? "fa-xmark" : "fa-bars"}`}></i>
+        </label>
+      </div>
     </div>
   );
 };

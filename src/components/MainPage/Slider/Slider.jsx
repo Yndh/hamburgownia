@@ -6,13 +6,17 @@ const Slider = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-        console.log(window.scrollY);
-        setOffset(window.scrollY/10);
+        const scrollY =
+          document.body.scrollTop || document.documentElement.scrollTop;
+
+        console.log("==========");
+        console.log(scrollY);
+        setOffset(scrollY/25);
     };
 
-    window.addEventListener("scroll", handleScroll);
+    document.body.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      document.body.removeEventListener("scroll", handleScroll);
     };
   }, []);
 

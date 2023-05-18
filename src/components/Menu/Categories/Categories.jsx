@@ -1,8 +1,5 @@
 import './Categories.css'
 
-import Burger from './Icons/Burger.svg'
-import Drink from './Icons/Drink.svg'
-
 const Categories = (props) => {
     return (
       <div className="categories__container">
@@ -12,7 +9,7 @@ const Categories = (props) => {
             props.setCategory(1);
           }}
         >
-          <i class="fa-solid fa-burger"></i>
+          <i className="fa-solid fa-burger"></i>
           <span className="cat-title">Hamburgi</span>
         </div>
 
@@ -22,7 +19,7 @@ const Categories = (props) => {
             props.setCategory(2);
           }}
         >
-          <i class="fa-solid fa-percent"></i>
+          <i className="fa-solid fa-percent"></i>
           <span className="cat-title">Oferty</span>
         </div>
 
@@ -32,7 +29,7 @@ const Categories = (props) => {
             props.setCategory(3);
           }}
         >
-          <i class="fa-solid fa-glass-water"></i>
+          <i className="fa-solid fa-glass-water"></i>
           <span className="cat-title">Napoje</span>
         </div>
 
@@ -42,7 +39,7 @@ const Categories = (props) => {
             props.setCategory(4);
           }}
         >
-          <i class="fa-solid fa-utensils"></i>
+          <i className="fa-solid fa-utensils"></i>
           <span className="cat-title">Inne</span>
         </div>
       </div>

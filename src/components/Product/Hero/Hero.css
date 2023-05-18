@@ -14,7 +14,12 @@
 }
 
 .productEl h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 5px;
+    width: 80%;
 }
 
 .productEl .desc {
@@ -34,10 +39,17 @@
     padding: 10px 30px;
     width: 40%;
 }
+@media (min-width: 601px) and (max-width: 1024px){
+    
+}
 
 @media (max-width: 600px){
+    .productElContainer{
+        margin-top: 400px;
+        padding-top: 50px;
+    }
     .productEl .productImg{
-        height: 500px;
+        height: 400px;
         top: -300px;
     }
     .productEl .desc{

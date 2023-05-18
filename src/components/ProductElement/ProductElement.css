@@ -13,7 +13,7 @@
     height: 220px;
 
     padding: 10px;
-    margin: 20px 70px;
+    margin: 20px 110px 20px 0;
 
     text-decoration: none;
     transition: .3s;
@@ -48,21 +48,22 @@
     color: #014463;
     opacity: .8;
 }
-
 @media (max-width: 600px){
     .productElement{
-        width: 100%;
-        height: auto;
+        scale: .8;
+        height: 200px;
+        margin: 5px 70px 5px 0;
+        margin-left: 0;
     }
     .productElement .price{
-        font-size: 40px;
+        font-size: 55px;
         margin-bottom: -10px;
     }
     .productElement .title{
-        font-size: 25px;
+        font-size: 30px;
     }
     .productElement .desc{
-        font-size: 12px;
+        font-size: 14px;
         width: 70%;
     }
     .productElement .productImage{

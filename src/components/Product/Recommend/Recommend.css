@@ -17,3 +17,9 @@
     text-decoration: none;
     color: #014463;
 }
+
+@media (max-width: 600px){
+    .recommended{
+        width: 80%;
+    }
+}

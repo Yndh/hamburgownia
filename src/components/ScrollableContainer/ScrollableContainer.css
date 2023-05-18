@@ -14,8 +14,13 @@
     align-items: center;
 
     width: 100%;
-        
+
     overflow: auto;
+    box-sizing: border-box;
+}
+.scrollable-container .scrollable-item{
+    box-sizing: border-box;
+
 }
 
 .scrollable-container .scrollable-item:nth-child(1) {
@@ -49,4 +54,21 @@
     -webkit-text-stroke: 2px #F19A22;
     text-stroke: 2px #F19A22;
     cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+    .scrollable-item{
+        /* margin-right: 110px; */
+        /* scale: .8; */
+        box-sizing: border-box;
+    }
+
+    .scrollable-item:nth-child(1) {
+        margin-left: 0px;
+    }
+
+    .arrowsContainer{
+        padding: 0 10px;
+    }
+
 }

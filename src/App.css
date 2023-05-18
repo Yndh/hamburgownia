@@ -3,13 +3,22 @@
 * {
   scroll-behavior: smooth;
 }
+html{
+  /* overflow: hidden; */
+  overflow-y: hidden;
+}
 
 body {
   overflow-x: hidden;
+  overflow-y: auto;
+  touch-action: pan-y;
   background: #FED601;
+  -webkit-overflow-scrolling: auto;
+  overscroll-behavior: contain;
 }
 
 .app {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -47,7 +56,8 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 3px;
 }
-h3{
+
+h3 {
   font-family: 'Titan One', cursive;
   font-weight: normal;
   font-size: 55px;
@@ -102,21 +112,22 @@ img {
   align-items: center;
   flex-direction: column;
 
-  width: 100%;
+  width: 100vw;
   padding: 100px 0;
 
   background: black;
   color: white;
 
   z-index: 2;
+  box-sizing: border-box;
 }
 
 .content__container::before {
   content: '';
   position: absolute;
   top: -50px;
-  left: -10%;
-  width: 120%;
+  /* left: -10%; */
+  width: 105%;
   height: 100px;
   background: black;
   border-radius: 50%;
@@ -131,11 +142,24 @@ img {
   width: 0;
 }
 
-@media (max-width: 600px){
-  h1{
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  .bottomWave {
+    margin-top: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
     font-size: 25px;
   }
-  h2{
-    font-size: 50px;
+  .content__container{
+    padding: 0 0 50px 0;
+  }
+  .bottomWave {
+    margin-top: -10px;
   }
 }

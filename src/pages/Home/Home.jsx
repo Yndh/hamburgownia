@@ -17,8 +17,8 @@ const Home = () => {
       <NavBar />
       <Hero />
 
-      <div className="content__container" id='menu'>
-        <Menu id="menu"/>
+      <div className="content__container" id="menu">
+        <Menu id="menu" />
         <Promotions />
         <Slider />
         <FindUs />

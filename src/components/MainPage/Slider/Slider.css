@@ -4,11 +4,14 @@
     align-items: center;
     flex-direction: column;
     border: 5px solid white;
+    border-right: none;
+    border-left: none;
     /* height: 200px; */
     width: 100%;
     padding: 5px 0;
     margin-top: 50px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .sliderText{
     font-family: 'Titan One', cursive;
@@ -17,7 +20,9 @@
 
     /* transform: translateX(-100px); */
 }
-
+@media (min-width: 601px) and (max-width: 1024px){
+    
+}
 @media (max-width: 600px){
     .sliderText{
         font-size: 30px;
