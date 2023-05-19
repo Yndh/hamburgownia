@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/hamburgownia/static/css/main.e37a3323.css",
+    "main.js": "/hamburgownia/static/js/main.2292ea1e.js",
+    "static/js/787.ef7fc2d4.chunk.js": "/hamburgownia/static/js/787.ef7fc2d4.chunk.js",
+    "static/media/cheddarburg.png": "/hamburgownia/static/media/cheddarburg.6acfdbd57dc3e3095c27.png",
+    "static/media/jalapenoburg.png": "/hamburgownia/static/media/jalapenoburg.587c3c6cdfa5a142c3ab.png",
+    "static/media/fries.png": "/hamburgownia/static/media/fries.6bf60e8b0e91bb41943c.png",
+    "static/media/onionrings.png": "/hamburgownia/static/media/onionrings.4f0ddc3d6cdcaa29d0a2.png",
+    "static/media/herbata.png": "/hamburgownia/static/media/herbata.5695525efac433063da6.png",
+    "static/media/latte.png": "/hamburgownia/static/media/latte.99cb7e07c534f7b37bea.png",
+    "static/media/nuggets.png": "/hamburgownia/static/media/nuggets.c4b02843c0d7c00a9c7b.png",
+    "static/media/cappuccino.png": "/hamburgownia/static/media/cappuccino.92e50447d32d290e9122.png",
+    "static/media/bacontaw.png": "/hamburgownia/static/media/bacontaw.fe75088db61370b846a2.png",
+    "static/media/grilltaw.png": "/hamburgownia/static/media/grilltaw.2443d7b20f6eac7872a8.png",
+    "static/media/cheeztaw.png": "/hamburgownia/static/media/cheeztaw.96ae4e2b357d116d603e.png",
+    "static/media/nuggetstaw.png": "/hamburgownia/static/media/nuggetstaw.fc35456adbd5a0c1098a.png",
+    "static/media/kawaczarna.png": "/hamburgownia/static/media/kawaczarna.1f96a488fa1909864b29.png",
+    "static/media/wingtaw.png": "/hamburgownia/static/media/wingtaw.16f23cf603154d03cb5e.png",
+    "static/media/onionringstaw.png": "/hamburgownia/static/media/onionringstaw.abc0960b717e0343676b.png",
+    "static/media/grillburg.png": "/hamburgownia/static/media/grillburg.8de5c55c23931bbf2f1c.png",
+    "static/media/baconburg.png": "/hamburgownia/static/media/baconburg.167d77fea37fe444c9d5.png",
+    "static/media/cheezburger.png": "/hamburgownia/static/media/cheezburger.d84dc8b0c85540f7eb36.png",
+    "static/media/wingedburg.png": "/hamburgownia/static/media/wingedburg.e05f53f63f9b747ab2bc.png",
+    "static/media/drink.png": "/hamburgownia/static/media/drink.32e204e16849723476f0.png",
+    "static/media/bbq.png": "/hamburgownia/static/media/bbq.91d7adf30865105c0442.png",
+    "static/media/sweetsour.png": "/hamburgownia/static/media/sweetsour.e8f538d2fe61e10214b6.png",
+    "static/media/garlic.png": "/hamburgownia/static/media/garlic.f705bac1813cee6e37cc.png",
+    "static/media/marker.webp": "/hamburgownia/static/media/marker.70269c5147262a4343c7.webp",
+    "static/media/logo.svg": "/hamburgownia/static/media/logo.03eec243f84ce2150d5d767fe8bbd8a8.svg",
+    "static/media/bottomWave.svg": "/hamburgownia/static/media/bottomWave.98e60a4804c3681aab5afe6cabe0faa4.svg",
+    "index.html": "/hamburgownia/index.html",
+    "main.e37a3323.css.map": "/hamburgownia/static/css/main.e37a3323.css.map",
+    "main.2292ea1e.js.map": "/hamburgownia/static/js/main.2292ea1e.js.map",
+    "787.ef7fc2d4.chunk.js.map": "/hamburgownia/static/js/787.ef7fc2d4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e37a3323.css",
+    "static/js/main.2292ea1e.js"
+  ]
+}
