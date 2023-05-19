@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/hamburgownia/static/css/main.e37a3323.css",
-    "main.js": "/hamburgownia/static/js/main.2292ea1e.js",
+    "main.css": "/hamburgownia/static/css/main.485d8d54.css",
+    "main.js": "/hamburgownia/static/js/main.9283959b.js",
     "static/js/787.ef7fc2d4.chunk.js": "/hamburgownia/static/js/787.ef7fc2d4.chunk.js",
     "static/media/cheddarburg.png": "/hamburgownia/static/media/cheddarburg.6acfdbd57dc3e3095c27.png",
     "static/media/jalapenoburg.png": "/hamburgownia/static/media/jalapenoburg.587c3c6cdfa5a142c3ab.png",
@@ -30,12 +30,12 @@
     "static/media/logo.svg": "/hamburgownia/static/media/logo.03eec243f84ce2150d5d767fe8bbd8a8.svg",
     "static/media/bottomWave.svg": "/hamburgownia/static/media/bottomWave.98e60a4804c3681aab5afe6cabe0faa4.svg",
     "index.html": "/hamburgownia/index.html",
-    "main.e37a3323.css.map": "/hamburgownia/static/css/main.e37a3323.css.map",
-    "main.2292ea1e.js.map": "/hamburgownia/static/js/main.2292ea1e.js.map",
+    "main.485d8d54.css.map": "/hamburgownia/static/css/main.485d8d54.css.map",
+    "main.9283959b.js.map": "/hamburgownia/static/js/main.9283959b.js.map",
     "787.ef7fc2d4.chunk.js.map": "/hamburgownia/static/js/787.ef7fc2d4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e37a3323.css",
-    "static/js/main.2292ea1e.js"
+    "static/css/main.485d8d54.css",
+    "static/js/main.9283959b.js"
   ]
 }
