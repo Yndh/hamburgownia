@@ -11,7 +11,7 @@ Sprawdź stronę [Hamburgowni](https://yndh.github.io/hamburgownia/).
 ## 💻 Języki i API
 
 * React.js
-* React Routers
+* React Router
 * Leaflet
 
 ## 📸 Zdjęcia projektu
