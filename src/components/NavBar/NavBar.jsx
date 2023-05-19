@@ -9,9 +9,9 @@ const NavBar = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const scrollToSection = (event, id) => {
-    if (pathname === "/") {
+    if (pathname === "hamburgownia/") {
       event.preventDefault();
-      window.location.href = `/#${id}`;
+      window.location.href = `hamburgownia/#${id}`;
     }
     setIsChecked(false)
   };
@@ -22,25 +22,37 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <Link to="/" className="logo">
+      <Link to="hamburgownia/" className="logo">
         <img src={logo} alt="Logo" />
         <p>Hamburgownia</p>
       </Link>
 
-      <input type="checkbox" name="" id="mobile-check" onChange={checkHandle} checked={isChecked}/>
+      <input
+        type="checkbox"
+        name=""
+        id="mobile-check"
+        onChange={checkHandle}
+        checked={isChecked}
+      />
       <ol>
         <li>
-          <Link to="/" onClick={(e) => scrollToSection(e, "menu")}>
+          <Link to="hamburgownia/" onClick={(e) => scrollToSection(e, "menu")}>
             <p>Menu</p>
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={(e) => scrollToSection(e, "promotions")}>
+          <Link
+            to="hamburgownia/"
+            onClick={(e) => scrollToSection(e, "promotions")}
+          >
             <p>Promocje</p>
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={(e) => scrollToSection(e, "findus")}>
+          <Link
+            to="hamburgownia/"
+            onClick={(e) => scrollToSection(e, "findus")}
+          >
             <p>Znajdź nas</p>
           </Link>
         </li>

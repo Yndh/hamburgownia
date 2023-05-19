@@ -4,7 +4,10 @@ import './ProductElement.css'
 
 const ProductElement = (props) => {
     return (
-      <Link to={`../product/${props.meal.title}`} className="productElement">
+      <Link
+        to={`../hamburgownia/product/${props.meal.title}`}
+        className="productElement"
+      >
         <span className="price">{props.meal.price} zł</span>
         <span className="title">
           {props.meal.title.split(" ").map((word, index) => {
@@ -17,7 +20,11 @@ const ProductElement = (props) => {
         </span>
         <span className="desc">{props.meal.description}</span>
 
-        <img src={props.meal.imageUrl} alt={props.meal.title} className="productImage" />
+        <img
+          src={props.meal.imageUrl}
+          alt={props.meal.title}
+          className="productImage"
+        />
       </Link>
     );
 }
