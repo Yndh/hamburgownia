@@ -21,11 +21,14 @@
     margin-bottom: 5px;
 }
 
+.menu .buttonLink{
+    width: 30%;
+}
 .menu button {
     --font-color: white;
     --bg-color: #F19A22;
     font-size: 20px;
-    width: 30%;
+    width: 100%;
 }
 
 .menu a {

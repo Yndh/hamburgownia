@@ -21,17 +21,19 @@ const Menu = () => {
       </h2>
       <div className="products__container">
         {mealsToShow.map((meal) => (
-          <ProductElement meal={meal}/>
+          <ProductElement meal={meal} />
         ))}
       </div>
 
-      <button
-        onClick={() => {
-          setMenuExpand(!menuExpand);
-        }}
-      >
-        {menuExpand ? "Zwiń Menu" : "Rozwiń Menu"}
-      </button>
+      <Link to={menuExpand ? "/menu" : ''} className='buttonLink'>
+        <button
+          onClick={() => {
+            setMenuExpand(!menuExpand);
+          }}
+        >
+          {menuExpand ? "Zobacz Całe Menu" : "Rozwiń Menu"}
+        </button>
+      </Link>
     </div>
   );
 };

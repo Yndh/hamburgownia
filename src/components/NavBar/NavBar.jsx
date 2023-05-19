@@ -1,27 +1,23 @@
 import React from "react";
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./NavBar.css";
 import logo from "../../assets/logo.svg";
 
 const NavBar = () => {
+  const { pathname } = useLocation();
   const [isChecked, setIsChecked] = useState(false);
-  const location = useLocation()
-  const navigate = useNavigate()
 
   const scrollToSection = (event, id) => {
-    console.log(location);
-    if(location.pathname == '/'){
+    if (pathname === "/") {
       event.preventDefault();
       window.location.href = `/#${id}`;
     }
-    document.querySelector("#mobile-check").checked = false;
-    checkHandle();
   };
 
-  const checkHandle = () => {
-    setIsChecked(document.querySelector("#mobile-check").checked);
-  };
+   const checkHandle = (event) => {
+     setIsChecked(event.target.checked);
+   };
 
   return (
     <div className="navbar">
@@ -33,17 +29,17 @@ const NavBar = () => {
       <input type="checkbox" name="" id="mobile-check" onChange={checkHandle} />
       <ol>
         <li>
-          <Link to="#" onClick={(e) => scrollToSection(e, "menu")}>
+          <Link to="/" onClick={(e) => scrollToSection(e, "menu")}>
             <p>Menu</p>
           </Link>
         </li>
         <li>
-          <Link to="#" onClick={(e) => scrollToSection(e, "promotions")}>
+          <Link to="/" onClick={(e) => scrollToSection(e, "promotions")}>
             <p>Promocje</p>
           </Link>
         </li>
         <li>
-          <Link to="#" onClick={(e) => scrollToSection(e, "findus")}>
+          <Link to="/" onClick={(e) => scrollToSection(e, "findus")}>
             <p>Znajdź nas</p>
           </Link>
         </li>
@@ -51,7 +47,7 @@ const NavBar = () => {
 
       <div className="menu-mobile">
         <label htmlFor="mobile-check">
-          <i class={`fa-solid ${isChecked ? "fa-xmark" : "fa-bars"}`}></i>
+          <i className={`fa-solid ${isChecked ? "fa-xmark" : "fa-bars"}`}></i>
         </label>
       </div>
     </div>
