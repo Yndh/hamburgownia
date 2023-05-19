@@ -100,7 +100,7 @@
 
     .promotionsCol .desc {
         font-size: 14px;
-        width: 80%;
+        width: 70%;
     }
 
     .promotionsCol .price {
@@ -129,7 +129,7 @@
 
     .promotionsCol .price {
         top: 20px;
-        right: -15%;
+        right: 10%;
         font-size: 35px;
     }
 
@@ -152,7 +152,7 @@
     .promotionsCol .desc {
         font-size: 14px;
         text-align: center;
-        width: 100%;
+        width: 70%;
         margin: 20px 0 0 0;
     }
 }
