@@ -9,9 +9,9 @@ const NavBar = () => {
   const [isChecked, setIsChecked] = useState(false);
 
   const scrollToSection = (event, id) => {
-    if (pathname === "hamburgownia/") {
+    if (pathname === "/hamburgownia/") {
       event.preventDefault();
-      window.location.href = `hamburgownia/#${id}`;
+      window.location.href = `#${id}`;
     }
     setIsChecked(false)
   };
@@ -22,7 +22,7 @@ const NavBar = () => {
 
   return (
     <div className="navbar">
-      <Link to="hamburgownia/" className="logo">
+      <Link to="../hamburgownia/" className="logo">
         <img src={logo} alt="Logo" />
         <p>Hamburgownia</p>
       </Link>
@@ -36,13 +36,13 @@ const NavBar = () => {
       />
       <ol>
         <li>
-          <Link to="hamburgownia/" onClick={(e) => scrollToSection(e, "menu")}>
+          <Link to="../hamburgownia/" onClick={(e) => scrollToSection(e, "menu")}>
             <p>Menu</p>
           </Link>
         </li>
         <li>
           <Link
-            to="hamburgownia/"
+            to="../hamburgownia/"
             onClick={(e) => scrollToSection(e, "promotions")}
           >
             <p>Promocje</p>
@@ -50,7 +50,7 @@ const NavBar = () => {
         </li>
         <li>
           <Link
-            to="hamburgownia/"
+            to="../hamburgownia/"
             onClick={(e) => scrollToSection(e, "findus")}
           >
             <p>Znajdź nas</p>
