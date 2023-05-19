@@ -13,6 +13,7 @@ const NavBar = () => {
       event.preventDefault();
       window.location.href = `/#${id}`;
     }
+    setIsChecked(false)
   };
 
    const checkHandle = (event) => {
@@ -26,7 +27,7 @@ const NavBar = () => {
         <p>Hamburgownia</p>
       </Link>
 
-      <input type="checkbox" name="" id="mobile-check" onChange={checkHandle} />
+      <input type="checkbox" name="" id="mobile-check" onChange={checkHandle} checked={isChecked}/>
       <ol>
         <li>
           <Link to="/" onClick={(e) => scrollToSection(e, "menu")}>

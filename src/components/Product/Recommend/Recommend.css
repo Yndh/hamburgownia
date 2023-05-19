@@ -15,7 +15,7 @@
 }
 .recommended a{
     text-decoration: none;
-    color: #014463;
+    color: var(--teritary-font-color);
 }
 
 @media (max-width: 600px){

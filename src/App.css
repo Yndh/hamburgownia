@@ -6,6 +6,7 @@
 html{
   /* overflow: hidden; */
   overflow-y: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,8 +14,6 @@ body {
   overflow-y: auto;
   touch-action: pan-y;
   background: #FED601;
-  -webkit-overflow-scrolling: auto;
-  overscroll-behavior: contain;
 }
 
 .app {
@@ -28,9 +27,18 @@ body {
   height: 100vh;
   padding: 0;
   margin: 0;
-  background: #FED601;
+  background: var(--primary-bg-color);
 
   box-sizing: border-box;
+
+  --primary-bg-color: #FED601;
+  --secondary-bg-color: #000;
+  --teritary-bg-color: #fff;
+  --primary-font-color: #000;
+  --secondary-font-color: #fff;
+  --teritary-font-color: #014463;
+  --primary-accent-color: #F19A22;
+  --secondary-accent-color: #868993;
 }
 
 p {
@@ -72,11 +80,11 @@ h3 {
 }
 
 .color {
-  color: #FED501;
+  color: var(--primary-bg-color);
 }
 
 .darkColor {
-  color: #F19A22;
+  color: var(--primary-accent-color);
 }
 
 button {
@@ -115,8 +123,8 @@ img {
   width: 100vw;
   padding: 100px 0;
 
-  background: black;
-  color: white;
+  background: var(--secondary-bg-color);
+  color: var(--secondary-font-color);
 
   z-index: 2;
   box-sizing: border-box;
@@ -129,7 +137,7 @@ img {
   /* left: -10%; */
   width: 105%;
   height: 100px;
-  background: black;
+  background: var(--secondary-bg-color);
   border-radius: 50%;
   z-index: -1;
 }

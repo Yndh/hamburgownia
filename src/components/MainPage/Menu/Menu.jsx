@@ -9,7 +9,7 @@ const Menu = () => {
   const [menuExpand, setMenuExpand] = useState(false)
 
   const filteredMeals = MEALS.filter((meal) => meal.categoryId === 1);
-  const mealsToShow = menuExpand ? filteredMeals : filteredMeals.slice(0, 3);
+  const mealsToShow = menuExpand ? filteredMeals : filteredMeals.slice(0, 2);
 
   return (
     <div className="menu">

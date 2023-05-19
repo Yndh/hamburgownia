@@ -4,9 +4,9 @@
     justify-content: center;
     flex-direction: column;
 
-    background: white;
-    color: #014463;
-    border: 3px solid #868993;
+    background: var(--teritary-bg-color);
+    color: var(--teritary-bg-color);
+    border: 3px solid var(--secondary-accent-color);
     border-radius: 10px;
 
     width: 300px;
@@ -19,7 +19,7 @@
     transition: .3s;
 }
 .productElement:hover{
-    border-color: #F19A22;
+    border-color: var(--primary-accent-color);
 }
 .productElement .productImage {
     position: absolute;
@@ -29,7 +29,7 @@
 }
 
 .productElement .title{
-    color: #014463;
+    color: var(--teritary-font-color);
 }
 
 .productElement .price {
@@ -37,7 +37,7 @@
     font-size: 55px;
     text-transform: uppercase;
     margin: 5px 0;
-    color: #014463;
+    color: var(--teritary-font-color);
 }
 
 .productElement .desc {
@@ -45,7 +45,7 @@
     font-size: 14px;
     text-transform: capitalize;
     width: 65%;
-    color: #014463;
+    color: var(--teritary-font-color);
     opacity: .8;
 }
 @media (max-width: 600px){
